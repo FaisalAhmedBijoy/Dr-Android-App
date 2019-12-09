@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dr Android</string>
+
+    <array name="Specialists">
+        <item>Nothing</item>
+        <item>Cardiologists</item>
+        <item>Dermatologists</item>
+        <item>Emergency Medicine Specialists</item>
+        <item>Neurologist</item>
+        <item>Gynecologist</item>
+        <item>Urologist</item>
+        <item>Obstetrician</item>
+        <item>Plastic Surgeon</item>
+    </array>
+</resources>

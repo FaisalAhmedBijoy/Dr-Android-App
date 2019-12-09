@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#47f91f"
+    tools:context=".Profile">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view2"
+        app:cardCornerRadius="30dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_height="180dp"
+            android:layout_width="180dp"
+            android:id="@+id/ivProfilePic"
+            android:src="@drawable/profile_icon" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/background_color"
+            android:id="@+id/tvProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textStyle="bold"
+            android:textColor="#610b80"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="#000"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvProfileAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Age: "
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvProfilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvProfileAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvProfileSpecialistAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spacialistat: "
+            android:textSize="20dp"
+            android:textColor="#00f"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

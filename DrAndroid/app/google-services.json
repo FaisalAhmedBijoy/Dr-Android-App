@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "142535346820",
+    "firebase_url": "https://dr-android-df31b.firebaseio.com",
+    "project_id": "dr-android-df31b",
+    "storage_bucket": "dr-android-df31b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142535346820:android:9656961266e750a0",
+        "android_client_info": {
+          "package_name": "com.kuet.pranku.drandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142535346820-0jtd3hh7seckvlk7hbj1qr87jjb9nlh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACmwjdf6bN41QOFdFszCbNJm0YES-331A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

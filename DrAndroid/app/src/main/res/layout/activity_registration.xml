@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    android:gravity="center_horizontal"
+    android:background="#0ff"
+    tools:context=".Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="7"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/userCheckBoxId"
+                        android:layout_width="match_parent"
+                        android:text="User"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/clientCheckboxId"
+                        android:layout_width="match_parent"
+                        android:text="Doctor"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.CardView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view2"
+                        app:cardCornerRadius="75dp">
+                        <ImageView
+                            android:layout_height="150dp"
+                            android:layout_width="150dp"
+                            android:id="@+id/ivProfile"
+                            android:src="@drawable/profile_icon" />
+                    </android.support.v7.widget.CardView>
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Profile pic"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Phone"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Address"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialist at: "
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+                <Spinner
+                    android:textAlignment="center"
+                    android:id="@+id/spinner"
+                    android:entries="@array/Specialists"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+            <Button
+                android:background="#13bfcf"
+                android:id="@+id/btnRegister"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:text="Register"
+                android:onClick="registration"
+                android:textSize="20dp"
+                android:textColor="#000"
+                />
+
+
+            <TextView
+                android:id="@+id/tvUserLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Signed in? Login"
+                android:textSize="22dp"
+                android:textColor="#00f"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
